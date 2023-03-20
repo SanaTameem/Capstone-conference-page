@@ -35,7 +35,7 @@ JavaScript
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [https://sanatameem.github.io/Capstone-conference-page/]()
+- [Live Demo](https://sanatameem.github.io/Capstone-conference-page/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
