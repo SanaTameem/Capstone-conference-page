@@ -79,7 +79,7 @@ const htmlOfSpeakers = (id, name, position, intro, photo) => `
         <div class="speaker-text-container">   
             <h3 class="speaker-name">${name}</h3>
             <p class="speaker-position">${position}</p>
-            <img src="Assets/icon-line-gray-64.png" alt="underline" class="underline2">
+            <img src="./Assets/icon-line-gray-64.png" alt="underline" class="underline2">
             <p class="speaker-intro">${intro}</p>
         </div> 
     </div>
