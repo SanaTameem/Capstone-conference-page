@@ -1,254 +1,328 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
-.bg-img{
-    background-image: url('../Assets/mobile-bg.png');
-    background-repeat: no-repeat;
-    background-size: 105% 100%;
-    padding-bottom: 100px;
+
+/* .bg-img {
+  background-image: url('../Assets/mobile-bg.png');
+  background-repeat: no-repeat;
+  background-size: 105% 100%;
+  padding-bottom: 69px;
+} */
+.nav-bar{
+  background: #FFFFFF;
+
 }
-.nav1-desktop{
+.nav1-desktop {
   display: none;
 }
-.nav2-desktop{
+
+.nav2-desktop {
   display: none;
 }
-.mobile-hamburger{
+.nav-mobile {
+     display: flex;
+    padding-bottom: 13px;
+    height: 63px;
+    align-items: end;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mobile-hamburger-container {
   margin-left: 36px;
 }
 
-.mobile-hamburger a img{
+.mobile-hamburger-container a img {
   width: 34px;
   padding-top: 32px;
 }
 
-.homepage{
+.homepage {
   display: flex;
   flex-direction: column;
-  
+  background-image: url(../Assets/mobile-bg.png);
+  background-repeat: no-repeat;
+  background-size: 105% 100%;
+  padding-bottom: 70px;
 }
-.heading-container{
+
+.heading-container {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url('../Assets/redb5.jpg');
   display: flex;
   flex-direction: column;
-  margin-top: 75px;
-  margin-left: 18px;
+  margin-top: 97px;
+  margin-left: 16px;
   font-size: 22px;
-    font-weight: 500;
-    line-height: 35px;
-    color: #ec5242;
+  font-weight: 500;
+  line-height: 35px;
+  color: #ec5242;
   letter-spacing: 1px;
 }
-.main-heading{
-   font-size: 50px;
+
+.main-heading {
+  font-size: 50px;
   font-weight: 900;
   line-height: 42px;
   margin-top: 10px;
 }
-.home-paragraph{
+
+.home-paragraph {
   display: flex;
-justify-content: center;
-align-items: center;
-border: 3px solid white;
-  background-color: rgb(250 249 249);;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  background-color: rgb(250 249 249);
   font-size: 15px;
-    color: #445470;
-      padding: 14px 32px;
-    margin: 18px;
-  line-height: 27px;
-    font-weight: 600;
-
+  color: rgb(35, 53, 58);
+  padding: 17px 14px;
+  margin: 20px 8px 0 8px;
+  height: 85px;
+  
 }
-.date{
+.home-paragraph p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+}
 
-  margin-left: 30px;
-  font-size: 30px;
+.date {
+  margin-left: 18px;
+  margin-top: 30px;
+  color: rgb(35, 53, 58);
+  height: 36.76px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.date p{
+  font-style: normal;
     font-weight: 900;
-    line-height: 35px;
-     color: #445470;
-  letter-spacing: 1px;
-}
-.place{
-    color: #445470;
-      padding-top: 6px;
-
-    margin-left: 30px;
-  line-height: 33px;
-    font-weight: 400;
-  font-size: 20px;
-}
-.main-program{
-    padding: 30px 10px;
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   background-image: url('../Assets/wallpaper_background.jpg');
-   background-repeat: no-repeat;
-   background-size: 105% 100%;
-    color: white;
-}
-.main-progam-title{
-text-align: center;
-font-size: 20px;
-word-spacing: 2px;
-font-weight: normal;
-
-}
-.underline{
-    rotate: -45deg;
-}
-.underline2{
-    margin-top: 5px;
-    rotate: 45deg;
-    width: 10%;
-}
-.programs-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.programs{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255 255 255 / 15.2%);
-    width: 98%;
-    padding: 18px 15px;
-    margin-top: 14px;
-    gap: 20px;
-}
-.program-icon{
-    width:40px;
-    height: 50px;
-
-}
-.program-title{
-    width: 28%;
-    font-size: 16px;
-    margin-left: 1px;
-    color: #ec5242;
-
-}
-.program-description{
-    width: 50%;
-    font-size: 14px;
-    /* margin-left: 30px; */
-
-}
-.join{
-    width: 80%;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ec5242;
-    margin-top: 35px; 
-    padding: 35px;
-    font-size: 18px;
-}
-.featured-speakers{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-
-}
-.speakers-title{
-    color: #445470;
-    text-align: center;
-font-size: 20px;
-word-spacing: 2px;
-font-weight: normal;
-}
-.speaker-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-}
-.speaker{
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    background-image: url('../Assets/chess-bg2.jpg');
-    background-position-y: top;
-    background-position-x: left;
-    background-repeat: no-repeat;
-    background-size: 15%;
-    margin-bottom: 10px;
-}
-.speaker-photo-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 30%;
-}
-.speaker-text-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
-    width: 65%;
-
-}
-.speaker-img{
-    padding-left: 10px;
-    padding-top: 15px;
-    align-self: flex-start;
-    width: 100%;
-}
-.speaker-name{
     font-size: 20px;
-    font-weight: 600;
-}
-.speaker-position{
-    margin-top: 5px;
-    font-size: 15px;
-    font-weight: 700;
-    color:  #ec5242;
-   font-style: italic;
-}
-.speaker-intro{
-    font-weight: normal;
-    font-size: 15px;
-    color: #445470;
-}
-.button-container{
-    width: 90%;
-}
-.speakerBtn{
-    font-size: 18px;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    letter-spacing: -0.08em;
+    line-height: 0px;
+    color:#595959;
 }
-.btnIcon{
-    width: 7%;
-    rotate: 90deg;
+.place {
+  margin-left: 18px;
+  height: 13px;
 }
-.speaker-3 {
-    display: none;
+.place p{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #868686;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
 }
-.speaker-4 {
-    display: none;
+
+.main-program {
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../Assets/cross.svg');
+  background-size: 63px;
+  background-color: rgb(40, 43,50);
+  color: white;
 }
-.speaker-5 {
-    display: none;
+
+.main-progam-title {
+  text-align: center;
+  font-size: 20px;
+  word-spacing: 2px;
+  font-weight: normal;
 }
-.speaker-6 {
-    display: none;
+
+.underline {
+  rotate: -45deg;
 }
+
+.underline2 {
+  margin-top: 5px;
+  rotate: 45deg;
+  width: 10%;
+}
+
+.programs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.programs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255 255 255 / 15.2%);
+  width: 98%;
+  padding: 18px 15px;
+  gap: 20px;
+  height: 120px;
+}
+
+.program-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.program-title {
+  width: 28%;
+  margin-left: 1px;
+  color: #ec5242;
+  font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+}
+
+.program-description {
+  width: 50%;
+  font-size: 14px;
+  font-style: normal;
+font-weight: 700;
+line-height: 22px;
+
+  /* margin-left: 30px; */
+}
+
+.join {
+  width: 300px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec5242;
+  margin-top: 35px;
+  padding: 20px 50px;
+  font-size: 18px;
+}
+
+.featured-speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.speakers-title {
+  color: #000000;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.speaker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.speaker {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background-image: url('../Assets/chess-bg2.jpg');
+  background-position-y: top;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  margin-bottom: 10px;
+}
+.hidden-speakers{
+  display: none;
+}
+.speaker-photo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 30%;
+}
+
+.speaker-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  width: 65%;
+}
+
+.speaker-img {
+  padding-left: 10px;
+  padding-top: 15px;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.speaker-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.speaker-position {
+  margin-top: 5px;
+      font-size: 12px;
+  font-weight: 700;
+  color: #ec5242;
+  font-style: italic;
+}
+
+.speaker-intro {
+  font-weight: normal;
+  font-size: 12px;
+  color: rgb(35, 53, 58);
+}
+
+.button-container {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.speakerBtn {
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+}
+.speaker-3, .speaker-4, .speaker-5, .speaker-6{
+  display: none;
+}
+
+.btnIcon {
+  width: 7%;
+  rotate: 90deg;
+}
+
+.invisible {
+  display: none;
+}
+
 /* @media only screen and (min-width:786px){ */
+
 /* .nav-bar{
   display: flex;
 }
@@ -266,4 +340,5 @@ font-weight: normal;
   color: white;
   text-decoration: none;
 } */
+
 /* } */
