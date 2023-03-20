@@ -11,7 +11,7 @@ featuredSpeakers.appendChild(featuredTitle);
 
 // featured title line
 const featuredTitleLine = document.createElement('img');
-featuredTitleLine.src = '../Assets/icons8-line-32.png';
+featuredTitleLine.src = './Assets/icons8-line-32.png';
 featuredTitleLine.classList.add('underline');
 featuredSpeakers.appendChild(featuredTitleLine);
 
@@ -22,7 +22,7 @@ const speakers = [
     name: 'Deen Freelon',
     position: 'professor',
     intro: 'Deen Freelon is an associate professor at the UNC Hussman School of Journalism and Media at the University of North Carolina and a principal researcher.',
-    photo: '../Assets/speaker1.jpg',
+    photo: './Assets/speaker1.jpg',
   },
 
   {
@@ -30,7 +30,7 @@ const speakers = [
     name: 'Martha Lane Fox',
     position: 'businesswoman, philanthropist',
     intro: 'Martha Lane Fox, is a British businesswoman, philanthropist and public servant. She co-founded Last Minute during the dotcom boom of the early 2000s.',
-    photo: '../Assets/speaker2.png',
+    photo: './Assets/speaker2.png',
   },
 
   {
@@ -38,7 +38,7 @@ const speakers = [
     name: 'Matthew Weber',
     position: 'professor',
     intro: 'Matthew Weber is an associate professor of Communication and a member of Rutgers\'NetSCI Network Science lab.',
-    photo: '../Assets/speaker3.jpg',
+    photo: './Assets/speaker3.jpg',
   },
 
   {
@@ -46,7 +46,7 @@ const speakers = [
     name: 'Daniel J. Weitzner',
     position: 'Scientist',
     intro: 'Daniel J. Weitzner. Founding Director, MIT Internet Policy Research Initiative (IPRI) 3Com Founders Senior Research Scientist, MIT Computer Science.',
-    photo: '../Assets/speaker4.jpg',
+    photo: './Assets/speaker4.jpg',
   },
 
   {
@@ -54,7 +54,7 @@ const speakers = [
     name: 'Jennifer Zhu Scott',
     position: 'entrepreneur and investor',
     intro: 'is an entrepreneur and investor based in Hong Kong, specialized in blockchain, Artificial Intelligence (AI) and other deep tech.',
-    photo: '../Assets/speaker5.png',
+    photo: './Assets/speaker5.png',
   },
 
   {
@@ -62,7 +62,7 @@ const speakers = [
     name: 'Sinan Aral',
     position: 'Author and business analytic',
     intro: 'Sinan Aral a global authority on business analytics; award-winning researcher; entrepreneur, and venture capitalist.',
-    photo: '../Assets/speaker6.jpg',
+    photo: './Assets/speaker6.jpg',
   },
 ];
 
@@ -105,7 +105,7 @@ SpeakerbuttonDiv.classList.add('button-container');
 speakerButton.innerHTML = 'More';
 const speakerBtnIcon = document.createElement('img');
 speakerBtnIcon.classList.add('btnIcon');
-speakerBtnIcon.src = '../Assets/icons8-more-than-50.png';
+speakerBtnIcon.src = './Assets/icons8-more-than-50.png';
 speakerButton.appendChild(speakerBtnIcon);
 speakerContainer.appendChild(SpeakerbuttonDiv);
 SpeakerbuttonDiv.appendChild(speakerButton);
