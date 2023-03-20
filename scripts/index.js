@@ -12,7 +12,6 @@ featuredSpeakers.appendChild(featuredTitle);
 // featured title line
 const featuredTitleLine = document.createElement('img');
 featuredTitleLine.src = '../Assets/icons8-line-32.png';
-console.log(featuredTitleLine);
 featuredTitleLine.classList.add('underline');
 featuredSpeakers.appendChild(featuredTitleLine);
 
@@ -111,20 +110,19 @@ speakerButton.appendChild(speakerBtnIcon);
 speakerContainer.appendChild(SpeakerbuttonDiv);
 SpeakerbuttonDiv.appendChild(speakerButton);
 
-//mobile menu :
+// mobile menu :
 // const humburger = document.querySelector('.hamburger');
 
-
-//more speakers button event listener:
+// more speakers button event listener:
 const moreSpeakers = document.querySelector('.speakerBtn');
 const arraySpeakers = [
- document.querySelector('.speaker-3'),
- document.querySelector('.speaker-4'),
- document.querySelector('.speaker-5'),
- document.querySelector('.speaker-6')
+  document.querySelector('.speaker-3'),
+  document.querySelector('.speaker-4'),
+  document.querySelector('.speaker-5'),
+  document.querySelector('.speaker-6'),
 ];
 moreSpeakers.addEventListener('click', () => {
-  arraySpeakers.forEach(speaker => {
+  arraySpeakers.forEach((speaker) => {
     speaker.style.display = 'flex';
   });
 });
