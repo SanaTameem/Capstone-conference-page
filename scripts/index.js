@@ -1,73 +1,78 @@
-//featured speakers section
+// featured speakers section
 const featuredSpeakers = document.createElement('section');
 featuredSpeakers.classList.add('featured-speakers');
 document.body.appendChild(featuredSpeakers);
 
-//featured title
+// featured title
 const featuredTitle = document.createElement('h2');
 featuredTitle.classList.add('speakers-title');
-featuredTitle.textContent = "Featured Speakers";
+featuredTitle.textContent = 'Featured Speakers';
 featuredSpeakers.appendChild(featuredTitle);
 
-//featured title line
+// featured title line
 const featuredTitleLine = document.createElement('img');
-featuredTitleLine.src = "../Assets/icons8-line-32.png";
+featuredTitleLine.src = '../Assets/icons8-line-32.png';
 console.log(featuredTitleLine);
 featuredTitleLine.classList.add('underline');
 featuredSpeakers.appendChild(featuredTitleLine);
 
-//featured speakers
+// featured speakers
 const speakers = [
-{id: 1,
-name: 'Deen Freelon',
-position: 'professor',
-intro:'Deen Freelon is an associate professor at the UNC Hussman School of Journalism and Media at the University of North Carolina and a principal researcher.',
-photo : '../Assets/speaker1.jpg'
-},
+  {
+    id: 1,
+    name: 'Deen Freelon',
+    position: 'professor',
+    intro: 'Deen Freelon is an associate professor at the UNC Hussman School of Journalism and Media at the University of North Carolina and a principal researcher.',
+    photo: '../Assets/speaker1.jpg',
+  },
 
-{id: 2,
-name: 'Martha Lane Fox',
-position: 'businesswoman, philanthropist',
-intro:'Martha Lane Fox, Baroness Lane-Fox of Soho, CBE is a British businesswoman, philanthropist and public servant. She co-founded Last Minute during the dotcom boom of the early 2000s and has subsequently served on public service digital projects.',
-photo : '../Assets/speaker2.png'
-},
+  {
+    id: 2,
+    name: 'Martha Lane Fox',
+    position: 'businesswoman, philanthropist',
+    intro: 'Martha Lane Fox, is a British businesswoman, philanthropist and public servant. She co-founded Last Minute during the dotcom boom of the early 2000s.',
+    photo: '../Assets/speaker2.png',
+  },
 
-{id: 3,
-name: 'Matthew Weber',
-position: 'professor',
-intro:'Matthew Weber is an associate professor of Communication and a member of Rutgers\'NetSCI Network Science lab.',
-photo : '../Assets/speaker3.jpg'
-},
+  {
+    id: 3,
+    name: 'Matthew Weber',
+    position: 'professor',
+    intro: 'Matthew Weber is an associate professor of Communication and a member of Rutgers\'NetSCI Network Science lab.',
+    photo: '../Assets/speaker3.jpg',
+  },
 
-{id: 4,
-name: 'Daniel J. Weitzner',
-position: 'Scientist',
-intro:'Daniel J. Weitzner. Founding Director, MIT Internet Policy Research Initiative (IPRI) 3Com Founders Senior Research Scientist, MIT Computer Science.',
-photo : '../Assets/speaker4.jpg'
-},
+  {
+    id: 4,
+    name: 'Daniel J. Weitzner',
+    position: 'Scientist',
+    intro: 'Daniel J. Weitzner. Founding Director, MIT Internet Policy Research Initiative (IPRI) 3Com Founders Senior Research Scientist, MIT Computer Science.',
+    photo: '../Assets/speaker4.jpg',
+  },
 
-{id: 4,
-name: 'Jennifer Zhu Scott',
-position: 'entrepreneur and investor',
-intro:'is an entrepreneur and investor based in Hong Kong, specialized in blockchain, Artificial Intelligence (AI) and other deep tech.',
-photo : '../Assets/speaker5.png'
-},
+  {
+    id: 5,
+    name: 'Jennifer Zhu Scott',
+    position: 'entrepreneur and investor',
+    intro: 'is an entrepreneur and investor based in Hong Kong, specialized in blockchain, Artificial Intelligence (AI) and other deep tech.',
+    photo: '../Assets/speaker5.png',
+  },
 
-{id: 5,
-name: 'Sinan Aral',
-position: 'Author and business analytic',
-intro:'Sinan Aral a global authority on business analytics; award-winning researcher; entrepreneur, and venture capitalist.',
-photo : '../Assets/speaker6.jpg'
-}
+  {
+    id: 6,
+    name: 'Sinan Aral',
+    position: 'Author and business analytic',
+    intro: 'Sinan Aral a global authority on business analytics; award-winning researcher; entrepreneur, and venture capitalist.',
+    photo: '../Assets/speaker6.jpg',
+  },
 ];
 
-//speaker-container part
+// speaker-container part
 const speakerContainer = document.createElement('div');
 speakerContainer.classList.add('speaker-container');
 featuredSpeakers.appendChild(speakerContainer);
 
-const htmlOfSpeakers = (id,name,position,intro,photo)=>
-`  
+const htmlOfSpeakers = (id, name, position, intro, photo) => `  
 <div class="speaker speaker-${id}">
         <div class="speaker-photo-container">
             <img src="${photo}" alt="speaker-photo" class="speaker-img">
@@ -82,26 +87,45 @@ const htmlOfSpeakers = (id,name,position,intro,photo)=>
 `;
 
 speakers.forEach((speaker) => {
-    const htmlAdd = htmlOfSpeakers(
-        speaker.id,
-        speaker.name,
-        speaker.position,
-        speaker.intro,
-        speaker.photo   
-    );
+  const htmlAdd = htmlOfSpeakers(
+    speaker.id,
+    speaker.name,
+    speaker.position,
+    speaker.intro,
+    speaker.photo,
+  );
     // myWorksSection.insertAdjacentHTML('afterend',htmlAdd);
-    speakerContainer.innerHTML += htmlAdd;
-  });
-  
-//button more speakers
+  speakerContainer.innerHTML += htmlAdd;
+});
+
+// button more speakers
 const SpeakerbuttonDiv = document.createElement('div');
 const speakerButton = document.createElement('button');
 speakerButton.classList.add('speakerBtn');
 SpeakerbuttonDiv.classList.add('button-container');
-speakerButton.innerHTML = "More";
+speakerButton.innerHTML = 'More';
 const speakerBtnIcon = document.createElement('img');
 speakerBtnIcon.classList.add('btnIcon');
-speakerBtnIcon.src = "../Assets/icons8-more-than-50.png"
+speakerBtnIcon.src = '../Assets/icons8-more-than-50.png';
 speakerButton.appendChild(speakerBtnIcon);
 speakerContainer.appendChild(SpeakerbuttonDiv);
 SpeakerbuttonDiv.appendChild(speakerButton);
+
+//mobile menu :
+// const humburger = document.querySelector('.hamburger');
+
+
+//more speakers button event listener:
+const moreSpeakers = document.querySelector('.speakerBtn');
+const arraySpeakers = [
+ document.querySelector('.speaker-3'),
+ document.querySelector('.speaker-4'),
+ document.querySelector('.speaker-5'),
+ document.querySelector('.speaker-6')
+];
+moreSpeakers.addEventListener('click', () => {
+  arraySpeakers.forEach(speaker => {
+    speaker.style.display = 'flex';
+  });
+});
+// console.log(hiddenSpeakers);
