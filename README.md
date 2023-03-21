@@ -30,7 +30,6 @@
 ## 🛠 Built With <a name="built-with"></a>
 HTML
 CSS
-Bootsrap
 JavaScript
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -75,6 +74,8 @@ npm install
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
+## Authors <a name="authors"></a>
+
 👤 **Sana Tameem**
 - GitHub: [@githubhandle](https://github.com/SanaTameem)
 - Twitter: [@twitterhandle](https://twitter.com/sana_tameem)
@@ -86,7 +87,7 @@ npm install
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Adding additional features using JS]**
+- [ ] **[Adding additional pages for the website.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
