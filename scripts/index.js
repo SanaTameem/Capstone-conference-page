@@ -10,8 +10,8 @@ featuredTitle.textContent = 'Featured Speakers';
 featuredSpeakers.appendChild(featuredTitle);
 
 // featured title line
-const featuredTitleLine = document.createElement('img');
-featuredTitleLine.src = './Assets/icons8-line-32.png';
+const featuredTitleLine = document.createElement('hr');
+// featuredTitleLine.src = './Assets/icons8-line-32.png';
 featuredTitleLine.classList.add('underline');
 featuredSpeakers.appendChild(featuredTitleLine);
 
@@ -79,7 +79,7 @@ const htmlOfSpeakers = (id, name, position, intro, photo) => `
         <div class="speaker-text-container">   
             <h3 class="speaker-name">${name}</h3>
             <p class="speaker-position">${position}</p>
-            <img src="./Assets/icon-line-gray-64.png" alt="underline" class="underline2">
+            <hr class="underline2"/> 
             <p class="speaker-intro">${intro}</p>
         </div> 
     </div>
@@ -103,15 +103,13 @@ const speakerButton = document.createElement('button');
 speakerButton.classList.add('speakerBtn');
 SpeakerbuttonDiv.classList.add('button-container');
 speakerButton.innerHTML = 'More';
-const speakerBtnIcon = document.createElement('img');
+const speakerBtnIcon = document.createElement('p');
 speakerBtnIcon.classList.add('btnIcon');
-speakerBtnIcon.src = './Assets/icons8-more-than-50.png';
+speakerBtnIcon.innerHTML = '&#94';
 speakerButton.appendChild(speakerBtnIcon);
 speakerContainer.appendChild(SpeakerbuttonDiv);
 SpeakerbuttonDiv.appendChild(speakerButton);
 
-// mobile menu :
-// const humburger = document.querySelector('.hamburger');
 
 // more speakers button event listener:
 const moreSpeakers = document.querySelector('.speakerBtn');
@@ -126,4 +124,20 @@ moreSpeakers.addEventListener('click', () => {
     speaker.style.display = 'flex';
   });
 });
-// console.log(hiddenSpeakers);
+
+// mobile menu :
+// const homepage = document.querySelector('.homepage');
+// const mainProgram = document.querySelector('.main-program');
+const closeBtn = document.querySelector('.close-btn');
+const humburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu-container');
+
+humburger.addEventListener('click', () => {
+  mobileMenu.style.display = "block";
+});
+closeBtn.addEventListener('click', ()=>{
+  mobileMenu.style.display = "none";
+});
+mobileMenu.addEventListener('click', ()=>{
+  mobileMenu.style.display = "none";
+});
