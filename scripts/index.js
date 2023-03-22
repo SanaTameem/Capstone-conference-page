@@ -110,7 +110,6 @@ speakerButton.appendChild(speakerBtnIcon);
 speakerContainer.appendChild(SpeakerbuttonDiv);
 SpeakerbuttonDiv.appendChild(speakerButton);
 
-
 // more speakers button event listener:
 const moreSpeakers = document.querySelector('.speakerBtn');
 const arraySpeakers = [
@@ -133,26 +132,25 @@ const humburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu-container');
 
 humburger.addEventListener('click', () => {
-  mobileMenu.style.display = "block";
+  mobileMenu.style.display = 'block';
   moreBtnIcn.style.filter = 'blur(10px)';
 });
-closeBtn.addEventListener('click', ()=>{
-  mobileMenu.style.display = "none";
+closeBtn.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
   moreBtnIcn.style.filter = 'blur(0)';
 });
-mobileMenu.addEventListener('click', ()=>{
-  mobileMenu.style.display = "none";
+mobileMenu.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
   moreBtnIcn.style.filter = 'blur(0)';
 });
 
-//resize 
+// resize
 function checkViewportSize() {
-  if (window.matchMedia("(min-width: 786px)").matches) {
-    mobileMenu.style.display = "none";
+  if (window.matchMedia('(min-width: 786px)').matches) {
+    mobileMenu.style.display = 'none';
     moreBtnIcn.style.filter = 'blur(0)';
-  }
-  else {
-    mobileMenu.style.display = "block";
+  } else {
+    mobileMenu.style.display = 'block';
     moreBtnIcn.style.filter = 'blur(10px)';
   }
 }

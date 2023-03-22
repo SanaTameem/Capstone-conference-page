@@ -402,10 +402,12 @@
   color: #fff;
   font-size: 35px;
 }
+
 .menu-Item a:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
+
 /* about page style */
 
 .bg-img {
@@ -1010,5 +1012,4 @@
     width: 5%;
     margin: 20px 0;
   }
-
 }
