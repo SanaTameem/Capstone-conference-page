@@ -30,6 +30,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo](https://sanatameem.github.io/Capstone-conference-page/)
+- [Video Record of the project](https://www.loom.com/share/fdcc36fff39448038cdc52aa9c36d6df)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
