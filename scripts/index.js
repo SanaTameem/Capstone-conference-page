@@ -130,7 +130,7 @@ const moreBtnIcn = document.querySelector('.btnIcon');
 const closeBtn = document.querySelector('.close-btn');
 const humburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu-container');
-//Humburger event listener
+// Humburger event listener
 humburger.addEventListener('click', () => {
   function checkViewportSize() {
     if (window.matchMedia('(min-width: 786px)').matches) {
@@ -145,12 +145,12 @@ humburger.addEventListener('click', () => {
   mobileMenu.style.display = 'block';
   moreBtnIcn.style.filter = 'blur(10px)';
 });
-//close Button event listener
+// close Button event listener
 closeBtn.addEventListener('click', () => {
   mobileMenu.style.display = 'none';
   moreBtnIcn.style.filter = 'blur(0)';
 });
-//mobile menu event listener
+// mobile menu event listener
 mobileMenu.addEventListener('click', () => {
   mobileMenu.style.display = 'none';
   moreBtnIcn.style.filter = 'blur(0)';
