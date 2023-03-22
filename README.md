@@ -82,8 +82,8 @@ npm install
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ]**[For my web science capstone project, I plan to develop a machine learning algorithm that can accurately predict user engagement with online content.]** 
-- [ ]**[My capstone project in web science will explore the impact of social media algorithms on the spread of misinformation and develop strategies to mitigate the effects of these algorithms.]**
+- [ ] **For my web science capstone project, I plan to develop a machine learning algorithm that can accurately predict user engagement with online content.** 
+- [ ] **My capstone project in web science will explore the impact of social media algorithms on the spread of misinformation and develop strategies to mitigate the effects of these algorithms.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
