@@ -735,10 +735,12 @@
     text-decoration: none;
     color: #fff;
   }
+
   .nav-item:hover {
     transform: scale(1.1);
     transition: 0.3s;
   }
+
   .nav-list2 {
     display: flex;
     justify-content: space-around;
