@@ -11,7 +11,6 @@ featuredSpeakers.appendChild(featuredTitle);
 
 // featured title line
 const featuredTitleLine = document.createElement('hr');
-// featuredTitleLine.src = './Assets/icons8-line-32.png';
 featuredTitleLine.classList.add('underline');
 featuredSpeakers.appendChild(featuredTitleLine);
 
@@ -70,7 +69,6 @@ const speakers = [
 const speakerContainer = document.createElement('div');
 speakerContainer.classList.add('speaker-container');
 featuredSpeakers.appendChild(speakerContainer);
-
 const htmlOfSpeakers = (id, name, position, intro, photo) => `  
 <div class="speaker speaker-${id}">
         <div class="speaker-photo-container">
@@ -93,7 +91,6 @@ speakers.forEach((speaker) => {
     speaker.intro,
     speaker.photo,
   );
-    // myWorksSection.insertAdjacentHTML('afterend',htmlAdd);
   speakerContainer.innerHTML += htmlAdd;
 });
 
@@ -125,7 +122,6 @@ moreSpeakers.addEventListener('click', () => {
 });
 
 // mobile menu :
-// const homepage = document.querySelector('.homepage');
 const moreBtnIcn = document.querySelector('.btnIcon');
 const closeBtn = document.querySelector('.close-btn');
 const humburger = document.querySelector('.hamburger');
