@@ -144,3 +144,18 @@ mobileMenu.addEventListener('click', ()=>{
   mobileMenu.style.display = "none";
   moreBtnIcn.style.filter = 'blur(0)';
 });
+
+//resize 
+function checkViewportSize() {
+  if (window.matchMedia("(min-width: 786px)").matches) {
+    mobileMenu.style.display = "none";
+    moreBtnIcn.style.filter = 'blur(0)';
+  }
+  else {
+    mobileMenu.style.display = "block";
+    moreBtnIcn.style.filter = 'blur(10px)';
+  }
+}
+
+window.addEventListener('resize', checkViewportSize, false);
+window.addEventListener('load', checkViewportSize, false);
